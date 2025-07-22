@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--backgroundHex) !important;
+}
+
+.navbar .nav-link{
+    background: var(--backgroundHex) !important;
+    color: white !important;
+}
+
+.navbar .nav-link:hover{
+    transform: scale(1.1);
+    color: blue !important;
+    cursor: pointer;
+}
+
+.rightIcons .dropdown-menu .dropdown-toggle{
+    color: white !important;
+}

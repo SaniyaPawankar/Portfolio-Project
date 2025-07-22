@@ -1,0 +1,79 @@
+
+/* theme */
+
+:root{
+    --backgroundHex: #1A1A1D;
+    --primaryHex: #3B1C32;
+    --secondaryHex: #6A1E55;
+    --darkHex: #A64D79;
+    --backgroundRGB: 26, 26, 29;
+    --primaryRGB: 59, 28, 50;
+    --secondaryRGB : 106, 30, 85;
+    --darkRGB : 166, 77, 121;
+}
+
+
+/* ===== Custom Color Classes ===== */
+
+/* Background Colors */
+.bg-background {
+    background-color: rgb(var(--backgroundRGB)) !important;
+}
+.bg-primary {
+    background-color: rgb(var(--primaryRGB)) !important;
+}
+.bg-secondary {
+    background-color: rgb(var(--secondaryRGB)) !important;
+}
+.bg-dark-custom {
+    background-color: rgb(var(--darkRGB)) !important;
+}
+
+/* Text Colors */
+.text-background {
+    color: rgb(var(--backgroundRGB)) !important;
+}
+.text-primary {
+    color: rgb(var(--primaryRGB)) !important;
+}
+.text-secondary {
+    color: rgb(var(--secondaryRGB)) !important;
+}
+.text-dark-custom {
+    color: rgb(var(--darkRGB)) !important;
+}
+
+/* Border Colors */
+.border-background {
+    border-color: rgb(var(--backgroundRGB)) !important;
+}
+.border-primary {
+    border-color: rgb(var(--primaryRGB)) !important;
+}
+.border-secondary {
+    border-color: rgb(var(--secondaryRGB)) !important;
+}
+.border-dark-custom {
+    border-color: rgb(var(--darkRGB)) !important;
+}
+
+/* Optional: Using Hex Variables */
+.bg-background-hex {
+    background-color: var(--backgroundHex) !important;
+}
+.bg-primary-hex {
+    background-color: var(--primaryHex) !important;
+}
+.bg-secondary-hex {
+    background-color: var(--secondaryHex) !important;
+}
+.bg-dark-hex {
+    background-color: var(--darkHex) !important;
+}
+
+
+
+
+
+
+
