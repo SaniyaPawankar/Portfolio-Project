@@ -1,24 +1,126 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: var(--backgroundHex) !important;
+body {
+    background: linear-gradient(90deg, var(--primaryHex), var(--backgroundHex)) !important;
 }
 
-.navbar .nav-link{
-    background: var(--backgroundHex) !important;
+.navbar .nav-link {
+
     color: white !important;
 }
 
-.navbar .nav-link:hover{
+.navbar .nav-link:hover {
     transform: scale(1.1);
     color: blue !important;
     cursor: pointer;
 }
 
-.rightIcons .dropdown-menu .dropdown-toggle{
+.rightIcons .dropdown-menu .dropdown-toggle {
     color: white !important;
+}
+
+.about {
+    background: linear-gradient(to bottom, #0d1117, #0a0a0a, #003344);
+    color: white;
+    padding: 60px 20px;
+}
+
+.about-body {
+    margin-top: 2rem;
+}
+
+.about-body .para-2 {
+    opacity: 50%;
+}
+
+.about-body .para-3 {
+    opacity: 25%;
+}
+
+.about-body .para-1,
+.about-body .para-2,
+.about-body .para-3 {
+    font-size: 20px;
+}
+
+.about .head {
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(90deg, #aaa, #fff, #aaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hero {
+    background: linear-gradient(90deg, var(--primaryHex), var(--backgroundHex)) !important;
+}
+
+#work {
+    background-color: black;
+    height: auto;
+}
+
+#work .project-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem;
+    align-items: center;
+}
+
+#work .project-cards .card-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(145deg, #0f1a24, #1c2b3a);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+#work .project-cards .card-container:hover {
+    transform: translateY(-10px);
+}
+
+#work .project-cards .card-container .card-body {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#work .project-cards .card-container .card-body h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#work .project-cards .card-container .card-body p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+#work .project-cards .card-container .card-img {
+    flex: 1;
+}
+
+#work .project-cards .card-container .card-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    #work .project-cards .card-container {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.detail {
+    margin-top: 3rem;
 }
