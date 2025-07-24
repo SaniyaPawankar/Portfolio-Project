@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="./vendors/Bootstrap/bootstrap/css/bootstrap.css">
     <script src="./vendors/Bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./vendors/Fontawesome-6/css/all.css">
+    <link rel="stylesheet" href="./vendors/Fontawesome-6/Fontawesome-6/css/all.css">
 </head>
 
 <body>
@@ -18,8 +18,8 @@
             <div class="container p-4">
                 <nav class="navbar navbar-expand-md d-flex  justify-content-between align-items-center">
                     <div class="navbar-brand d-flex gap-1 align-items-center">
-                        <div class="icon-container">
-                            <span class="fa-solid fa-a text-light"></span>
+                        <div class="Brand-logo">
+                            <img src="./media/icons/letter-a.png" alt="" style="width: 30px; height: 30px;">
                         </div>
                     </div>
 
@@ -55,9 +55,14 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </div>
-                        <i class="fa-solid fa-house text-light"></i>
-                        <i class="fa-solid fa-user text-light"></i>
-                        <i class="fa-solid fa-phone text-light"></i>
+                        <div class="icon-container d-flex flex-row  gap-3 align-items-center">
+                            <div class="icon-img">
+                                <img src="./media/icons/telephone.png" alt="">
+                            </div>
+                            <div class="icon-img">
+                                <img src="./media/icons/search-interface-symbol.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -65,21 +70,25 @@
     </header>
 
     <main id="main">
+
+        <!--Hero Section-->
         <div id="hero" class="container-fluid h-80">
             <div class="container p-4">
-                <button class="btn btn-outline-primary px-3 py-2 rounded-pill"><i
-                        class="fa-solid fa-house text-light"></i>Hi, thereeeee!</button>
+                <button class="btn btn-outline-primary px-3 py-2 rounded-pill">
+                    <i class="fa-solid fa-user me-2"></i>Hi, thereeeee!</button>
                 <h1 class="mt-4">
                     <span class="heading-1 text-white d-block fw-bolder fs-1">Anders Antonsen,</span>
                     <span class="text-white d-block fw-bolder fs-1">visual designer who build a useful</span>
                     <span class="text-white d-block fw-bolder fs-1">and eye pleasing design</span>
                 </h1>
                 <span class="d-block" style="margin-top: 150px;">
-                    <p class="text-white">Scroll down to see the portfolio<i class="fa-solid fa-house text-light"></i>
+                    <p class="text-white">Scroll down to see the portfolio<i class="fa-solid fa-arrow-down ms-2"></i>
                     </p>
                 </span>
             </div>
         </div>
+
+        <!--About Section-->
 
         <div class="about container-fluid h-80">
             <div class="container p-4">
@@ -92,16 +101,16 @@
                     <p>HBO</p>
                 </div>
                 <div class="about-body  text-start w-50 d-flex flex-column  h-100 ">
-                    <span class="para-1 d-block fw-normal  text-white">
+                    <span class="para-1 d-block   text-white">
                         With over 15 years of expertise in innovative ventures, I've collaborated with brands like
                         Google, Slack, Youtube, Sony, Blizzard Entertainment, Volkswagen, Chevrolet, Spotify, Procter &
                         Gamble, HBO, and LG, to name a few
                     </span>
-                    <span class="para-2 d-block fw-normal  text-white mt-1">
+                    <span class="para-2 d-block   text-white mt-1">
                         I consider myself a versatile and practical visual designer, specializing in design systems,
                         impactful visuals, and brand identity.
                     </span>
-                    <span class="para-3 d-block fw-normal  text-white" style="margin-top: 100px;">
+                    <span class="para-3 d-block  text-white" style="margin-top: 100px;">
                         Currently working at Zigma.<br>
                         Based in Edinburgh, Scotland.
                     </span>
@@ -109,13 +118,14 @@
             </div>
         </div>
 
+        <!--Work Section-->
         <div id="work" class="container-fluid ">
             <div class="container p-4">
                 <div class="latest-project mt-5">
                     <h2 class="text-center text-white">A glimpse into my latest work</h2>
                 </div>
                 <div class="project-cards ">
-                    <div class="card-container p-4">
+                    <div class="card-container ">
                         <div class="left-body">
                             <div class="card-title text-start text-white">
                                 <h2 class="ps-3">MoonWave - Crypto Investment Mobile Apps</h2>
@@ -146,7 +156,7 @@
                         </div>
                     </div>
 
-                    <div class="card-container p-4">
+                    <div class="card-container">
                         <div class="left-body">
                             <div class="card-title text-start text-white">
                                 <h2 class="ps-3">MoonWave - Crypto Investment Mobile Apps</h2>
@@ -177,7 +187,7 @@
                         </div>
                     </div>
 
-                    <div class="card-container p-4">
+                    <div class="card-container">
                         <div class="left-body">
                             <div class="card-title text-start text-white">
                                 <h2 class="ps-3">MoonWave - Crypto Investment Mobile Apps</h2>
@@ -210,8 +220,32 @@
                 </div>
             </div>
         </div>
+        <!--Experience Section-->
+        <div id="experience" class="container-fluid">
+            <div class="container p-4">
+                <div class="icon-container d-flex flex-row justify-content-around mt-5">
+                    <div class="tool shadow">
+                        <img src="./media/icons/figma.png" alt="">
+                    </div>
+                    <div class="tool shadow">
+                        <img src="./media/icons/app.png" alt="">
+                    </div>
+                    <div class="tool shadow">
+                        <img src="./media/icons/easel.png" alt="">
+                    </div>
+                    <div class="tool shadow">
+                        <img src="./media/icons/illustrator.png" alt="">
+                    </div>
+                    <div class="tool shadow">
+                        <img src="./media/icons/after-effects.png" alt="">
+                    </div>
+                    <div class="tool shadow">
+                        <img src="./media/icons/adobe-photoshop.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-
     <footer id="footer">
     </footer>
 </body>
