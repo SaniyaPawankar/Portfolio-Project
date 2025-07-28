@@ -1,15 +1,23 @@
-
 /* theme */
 
-:root{
-    --backgroundHex: #1A1A1D;
+:root {
+    /* --backgroundHex: #1A1A1D;
     --primaryHex: #3B1C32;
     --secondaryHex: #6A1E55;
     --darkHex: #A64D79;
     --backgroundRGB: 26, 26, 29;
     --primaryRGB: 59, 28, 50;
     --secondaryRGB : 106, 30, 85;
-    --darkRGB : 166, 77, 121;
+    --darkRGB : 166, 77, 121; */
+
+    --backgroundHex: #1E0342;
+    --primaryHex: #0E46A3;
+    --secondaryHex: #9AC8CD;
+    --darkHex: #E1F7F5;
+    --backgroundRGB: rgb(30, 3, 66);
+    --primaryRGB: rgb(14, 70, 163);
+    --secondaryRGB: rgb(154, 200, 205);
+    --darkRGB: rgb(225, 247, 245);
 }
 
 
@@ -19,12 +27,15 @@
 .bg-background {
     background-color: rgb(var(--backgroundRGB)) !important;
 }
+
 .bg-primary {
     background-color: rgb(var(--primaryRGB)) !important;
 }
+
 .bg-secondary {
     background-color: rgb(var(--secondaryRGB)) !important;
 }
+
 .bg-dark-custom {
     background-color: rgb(var(--darkRGB)) !important;
 }
@@ -33,12 +44,15 @@
 .text-background {
     color: rgb(var(--backgroundRGB)) !important;
 }
+
 .text-primary {
     color: rgb(var(--primaryRGB)) !important;
 }
+
 .text-secondary {
     color: rgb(var(--secondaryRGB)) !important;
 }
+
 .text-dark-custom {
     color: rgb(var(--darkRGB)) !important;
 }
@@ -47,12 +61,15 @@
 .border-background {
     border-color: rgb(var(--backgroundRGB)) !important;
 }
+
 .border-primary {
     border-color: rgb(var(--primaryRGB)) !important;
 }
+
 .border-secondary {
     border-color: rgb(var(--secondaryRGB)) !important;
 }
+
 .border-dark-custom {
     border-color: rgb(var(--darkRGB)) !important;
 }
@@ -61,19 +78,15 @@
 .bg-background-hex {
     background-color: var(--backgroundHex) !important;
 }
+
 .bg-primary-hex {
     background-color: var(--primaryHex) !important;
 }
+
 .bg-secondary-hex {
     background-color: var(--secondaryHex) !important;
 }
+
 .bg-dark-hex {
     background-color: var(--darkHex) !important;
 }
-
-
-
-
-
-
-
