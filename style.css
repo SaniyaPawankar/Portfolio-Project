@@ -259,6 +259,7 @@ body {
 }
 
 
+
 #newletter .formInput {
     width: 600px;
     height: 50px;
@@ -323,7 +324,7 @@ body {
 
     .newsletter-form input,
     .newsletter-form button {
-        width: 90%;
+        max-width: 50% !important;
         margin-bottom: 10px;
         font-size: 1rem;
     }
@@ -339,8 +340,3 @@ body {
     }
 }
 
-.input-Email {
-    width: 600px;
-    height: 50px;
-    border-radius: 15px;
-}
