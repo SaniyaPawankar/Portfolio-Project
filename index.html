@@ -5,575 +5,383 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="global.css">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./vendors/Bootstrap/bootstrap/css/bootstrap.css">
-    <script src="./vendors/Bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="./vendors/Fontawesome-6/Fontawesome-6/css/all.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="./vendors/Bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <div class="container-fluid">
-            <div class="container p-4">
-                <nav
-                    class="navbar navbar-expand-lg navbar-dark  d-flex justify-content-between align-items-center fixed-top mx-5  mt-3">
-                    <div class="navbar-brand d-flex gap-1 align-items-center">
-                        <div class="Brand-logo">
-                            <img src="./media/icons/letter-a.png" alt="" style="width: 30px; height: 30px;">
+    <div class="container-fluid px-0">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow bg-white sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand navbarBrand" href="/">
+                    <span class="material-icons-outlined me-1 materialIcon">important_devices</span>
+                    Saniya Developer
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-expanded="false" aria-controls="navbarContent" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <div class="nav-item">
+                            <a class="nav-link me-lg-3" href="/">Home</a>
                         </div>
-                    </div>
-                    <button class="navbar-toggler togglerIconBtn" data-bs-toggle="collapse" data-bs-target="#Menu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="Menu">
-                        <ul class="navbar-nav d-flex flex-row me-auto gap-3">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Work</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Proposal</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contacts</a>
-                            </li>
-                        </ul>
-
-                        <div class="rightIcons d-flex align-items-center ms-auto">
-                            <div class="dropdown us-dropdown">
-                                <div class="btn  us-dropdown-btn dropdown-toggle text-light" type="button"
-                                    id="usDropdown" data-bs-toggle="dropdown">
-                                    Us
-                                </div>
-                                <ul class="dropdown-menu us-dropdown-menu">
-                                    <li><a class="dropdown-item" href="#about">About Me</a></li>
-                                    <li><a class="dropdown-item" href="#projects">Projects</a></li>
-                                    <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                                    <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
-                                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
-                                </ul>
-                            </div>
-                            <div class="icon-container d-flex flex-row  gap-3 align-items-center">
-                                <div class="icon-img">
-                                    <img src="./media/icons/telephone.png" alt="">
-                                </div>
-                                <div class="icon-img">
-                                    <img src="./media/icons/search-interface-symbol.png" alt="">
-                                </div>
-                            </div>
+                        <div class="nav-item">
+                            <a class="nav-link me-lg-3" href="#about">About</a>
                         </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <main id="main mb-5 " style="margin-top: 150px;">
-
-        <!--Hero Section-->
-        <div id="hero" class="container-fluid h-80">
-            <div class="container p-4">
-                <button class="btn btn-outline-primary px-3 py-2 rounded-pill">
-                    <i class="fa-solid fa-user me-2"></i>Hi, thereeeee!</button>
-                <h1 class="mt-4">
-                    <span class="heading-1 text-white d-block fw-bolder fs-1">Anders Antonsen,</span>
-                    <span class="text-white d-block fw-bolder fs-1">visual designer who build a useful</span>
-                    <span class="text-white d-block fw-bolder fs-1">and eye pleasing design</span>
-                </h1>
-                <span class="d-block" style="margin-top: 150px; margin-bottom: 100px;">
-                    <p class="text-white">Scroll down to see the portfolio<i class="fa-solid fa-arrow-down ms-2"></i>
-                    </p>
-                </span>
-            </div>
-        </div>
-
-        <!--About Section-->
-
-        <div class="about container-fluid h-80">
-            <div class="container p-4">
-                <div class="head text-white d-flex flex-row justify-content-between  mt-3">
-                    <p>Google</p>
-                    <div class="d-flex flex-row align-items-center justify-content-center">
-                        <img src="./media/icons/youtube.png" style="width:30px; height: 30px;" class="mb-3" alt="">
-                        <p>Youtube</p>
-                    </div>
-                    <p>CHEVROLET</p>
-                    <div class="d-flex flex-row align-items-center justify-content-center">
-                        <img src="./media/icons/slack.png" style="width:30px; height: 30px;" class="mb-3">
-                        <p>slack</p>
-                    </div>
-                    <div class="d-flex flex-row align-items-center justify-content-center">
-                        <img src="./media/icons/spotify.png" style="width:30px; height: 30px;" class="mb-3">
-                        <p> Spotify</p>
-                    </div>
-                    <p>HBO</p>
-                </div>
-                <div class="about-body  text-start w-50 d-flex flex-column  h-100 ">
-                    <span class="para-1 d-block text-white">
-                        With over 15 years of expertise in innovative ventures, I've collaborated with brands like
-                        Google, Slack, Youtube, Sony, Blizzard Entertainment, Volkswagen, Chevrolet, Spotify, Procter &
-                        Gamble, HBO, and LG, to name a few
-                    </span>
-                    <span class="para-2 d-block   text-white mt-1">
-                        I consider myself a versatile and practical visual designer, specializing in design systems,
-                        impactful visuals, and brand identity.
-                    </span>
-                    <span class="para-3 d-block  text-white" style="margin-top: 100px;">
-                        Currently working at Zigma.<br>
-                        Based in Edinburgh, Scotland.
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <!--Work Section-->
-        <div id="work" class="container-fluid ">
-            <div class="container p-4">
-                <div class="latest-project mt-5">
-                    <h2 class="text-center text-white mb-5">A glimpse into my latest work</h2>
-                </div>
-                <div class="project-cards ">
-                    <div class="card-container ">
-                        <div class="left-body">
-                            <div class="card-title text-start text-white">
-                                <h2 class="ps-3">MoonWave - Crypto Investment Mobile Apps</h2>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-text text-start text-white">
-                                    A sleek, intutive mobile app designed to simplify crypto investing. MoonWave helps
-                                    users
-                                    track portfolios, explore real-time market data, and make informed decisions, all
-                                    wrapped in a seamless, user-first experience.
-                                </div>
-                                <div class="detail text-start">
-                                    <div class="d-flex flex-row justify-content-around">
-                                        <h2 class="detail-heading">Germany</h2>
-                                        <h2 class="detail-heading me-5">2 months</h2>
-                                        <h2 class="detail-heading">2025</h2>
-                                    </div>
-                                    <div class="d-flex flex-row text-start justify-content-around">
-                                        <p>Country</p>
-                                        <p>Time Of Working</p>
-                                        <p>Years</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="nav-item">
+                            <a class="nav-link me-lg-3" href="#projects">Projects</a>
                         </div>
-                        <div class="right-img">
-                            <img src="./media/Images/mobile.jpg" alt="">
+                        <div class="nav-item">
+                            <a class="nav-link me-lg-3" href="#testimonials">Testimonials</a>
                         </div>
-                    </div>
-
-                    <div class="card-container">
-                        <div class="left-body">
-                            <div class="card-title text-start text-white">
-                                <h2 class="ps-3">Urbanex+ - Architecture Service Landing Page</h2>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-text text-start text-white">
-                                    A sleek and modern landing page designed for Urbanex+, showcasing architectural
-                                    services with bold visuals, clear structure, and a user-focused layout that
-                                    highlights expertise and inspires trust.
-                                </div>
-                                <div class="detail text-start">
-                                    <div class="d-flex flex-row justify-content-around">
-                                        <h2 class="detail-heading ">Australia</h2>
-                                        <h2 class="detail-heading  me-5">3 months</h2>
-                                        <h2 class="detail-heading ">2025</h2>
-                                    </div>
-                                    <div class="d-flex flex-row text-start justify-content-around">
-                                        <p>Country</p>
-                                        <p>Time Of Working</p>
-                                        <p>Years</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right-img">
-                            <img src="./media/Images/mobile-2.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="card-container">
-                        <div class="left-body">
-                            <div class="card-title text-start text-white">
-                                <h2 class="ps-3">KraftQ - Creative Agency Logi and Brand Guideline</h2>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-text text-start text-white">
-                                    A bold and modern visual identity crafted for KraftQ, a forward-thinking creative
-                                    agency. The project includes a dynamic logo system and a comprehensive brand
-                                    guideline to ensure consistency across digital.
-                                </div>
-                                <div class="detail text-start">
-                                    <div class="d-flex flex-row justify-content-around">
-                                        <h2 class="detail-heading ">Denmark</h2>
-                                        <h2 class="detail-heading me-5">1 month</h2>
-                                        <h2 class="detail-heading">2025</h2>
-                                    </div>
-                                    <div class="d-flex flex-row text-start justify-content-around">
-                                        <p>Country</p>
-                                        <p>Time Of Working</p>
-                                        <p>Years</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right-img">
-                            <img src="./media/Images/mobile-3.jpg" alt="">
+                        <div class="nav-item">
+                            <a class="nav-link me-lg-3" href="#contact">Contact</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--Experience Section-->
-        <div id="experience" class="container-fluid mb-5">
-            <div class="container p-4">
-                <div class="icon-container d-flex flex-row justify-content-around mt-5">
-                    <div class="tool shadow">
-                        <img src="./media/icons/figma.png" alt="">
-                    </div>
-                    <div class="tool shadow">
-                        <img src="./media/icons/app.png" alt="">
-                    </div>
-                    <div class="tool shadow">
-                        <img src="./media/icons/easel.png" alt="">
-                    </div>
-                    <div class="tool shadow">
-                        <img src="./media/icons/illustrator.png" alt="">
-                    </div>
-                    <div class="tool shadow">
-                        <img src="./media/icons/after-effects.png" alt="">
-                    </div>
-                    <div class="tool shadow">
-                        <img src="./media/icons/adobe-photoshop.png" alt="">
-                    </div>
-                </div>
+        </nav>
+        <!-- End Navbar -->
 
-                <div class="experience-body mt-5 text-light">
-                    <div class="container-fluid">
-                        <p>03 - EXPERIENCE</p>
-                        <h2>Experience that shapes meaningful design</h2>
-                        <p>With our a decade of creating intutive digital experience. Anders Andtonseen combines product
-                            thinking, design startegy, and user emapthy. He has assisted teams in transforming complex
-                            chanllenges into elegant, user-centric solutions.</p>
+        <!-- Hero -->
 
-                        <div class="experience-info d-flex flex-column">
-                            <div
-                                class="d-flex flex-row justify-content-between align-items-center border-bottom border-dark mt-3 mb-3">
-                                <!--1st experience-->
-                                <div class="position d-flex flex-column">
-                                    <h4>Junior UI/UX Designer</h4>
-                                    <p>NordicApps Studio - <i>Copenhagen, Denmark</i></p>
-                                </div>
-                                <div class="year">
-                                    <h3>2011-2014</h3>
-                                </div>
-                            </div>
-                            <div
-                                class="d-flex flex-row justify-content-between align-items-center border-bottom border-dark mt-3 mb-3">
-                                <!--1st experience-->
-                                <div class="position d-flex flex-column">
-                                    <h4>Product Designer</h4>
-                                    <p>Volvo Cars Digital - <i>Gothenburg, Swedan</i></p>
-                                </div>
-                                <div class="year">
-                                    <h3>2014-2016</h3>
-                                </div>
-                            </div>
-
-                            <div
-                                class="d-flex flex-row justify-content-between align-items-center border-bottom border-dark mt-3 mb-3">
-                                <!--1st experience-->
-                                <div class="position d-flex flex-column">
-                                    <h4>Senior UI/UX Designer</h4>
-                                    <p>Klarna - <i>Stockholm, Sweden</i></p>
-                                </div>
-                                <div class="year">
-                                    <h3>2016-2020</h3>
-                                </div>
-                            </div>
-
-                            <div
-                                class="d-flex flex-row justify-content-between align-items-center border-bottom border-dark mt-3 mb-3">
-                                <!--1st experience-->
-                                <div class="position d-flex flex-column">
-                                    <h4>Lead Product Designer</h4>
-                                    <p>Spotify - <i>Stockholm, Sweden</i></p>
-                                </div>
-                                <div class="year">
-                                    <h3>2020-present</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Blogs-->
-            <div id="blogs" class="container p-4">
-                <p class="mt-3 text-center">04 - BLOGS</p>
-                <div class="blog-heading mt-3">
-                    <h2 class="d-block text-center">Practical insights and ideas from the journey so far</h2>
-                </div>
-
-
-                <div class="blog-cards d-flex flex-row justify-content-around mt-5 mb-5 gap-4">
-
-                    <div class="card blog-card text-dark" style="width: 22rem;">
-                        <img src="./media/Images/study.jpg" class="card-img-top blog-img" alt="Study">
-                        <div class="card-body blog-body">
-                            <p class="text-muted mb-1">June 23, 2024</p>
-                            <h5 class="card-title">Why great UX starts with asking the right questions</h5>
-                            <p class="card-text">
-                                It's easy to jump into wireframes. But what if the problem isn't even defined? I explore
-                                how shifting your mindset toward inquiry - rather than execution.
+        <header class="bg-light py-5">
+            <div class="container px-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5">
+                            <h2 class="text-center fw-bold mb-2">Hi! I am Saniya,</h2>
+                            <h2 class="text-primary text-center fw-bold mb-2">a full-stack web developer</h2>
+                            <p class="lead text-muted mb-4 text-center">
+                                I specialize in building web application using React and Django.
+                                <br>Scroll down to see what
+                                I have been working.
                             </p>
-                            <a href="#" class="btn btn-primary mt-auto">Read more</a>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                                <a class="btn btn-primary btn-large text-uppercase" href="#about">
+                                    Learn More
+                                    <span class="material-icons-outlined materialIcon ms-2">help_outline</span>
+                                </a>
+                                <a class="btn btn-primary btn-large text-uppercase" href="#projects">
+                                    View My Work
+                                    <span class="material-icons-outlined ms-2 materialIcon">manage_search</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-xl-5 col-xxl-6 justify-content-center">
+                        <img src="./media/Images/hero1.avif" class="img-fluid rounded-3 my-3" alt="hero img">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <hr>
+        <!-- End Hero -->
 
-                    <div class="card blog-card text-dark" style="width: 22rem;">
-                        <img src="./media/Images/laptop.jpg" class="card-img-top blog-img" alt="Laptop">
-                        <div class="card-body blog-body">
-                            <p class="text-muted mb-1">June 23, 2024</p>
-                            <h5 class="card-title">Scaling design systems without the chaos</h5>
-                            <p class="card-text">
-                                Design systems can empower teams—or overwhelm them. In this post, I break down the
-                                practical steps for building and scaling a design system.
+        <main>
+            <!-- About -->
+            <section id="about" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">About</h2>
+                        <p class="lead text-muted mb-5">
+                            I am a freelance web developer who builds elegant, fast, and scalable web applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="d-flex mb-5 about">
+                                <span class="material-icons-outlined materialIcon m-auto text-primary">palette</span>
+                            </div>
+                            <h5>Design</h5>
+                            <p class="text-muted mb-0">
+                                I create beautiful, modern designs optimized for multiple color modes (light and dark
+                                themes).
                             </p>
-                            <a href="#" class="btn btn-primary mt-auto">Read more</a>
                         </div>
-                    </div>
 
-                    <div class="card blog-card text-dark" style="width: 22rem;">
-                        <img src="./media/Images/laptop2.jpg" class="card-img-top blog-img" alt="Laptop 2">
-                        <div class="card-body blog-body">
-                            <p class="text-muted mb-1">June 23, 2024</p>
-                            <h5 class="card-title">Leading design without losing the craft</h5>
-                            <p class="card-text">
-                                As designers grow into leadership roles, many fear losing their creative edge. I share
-                                how I've balanced strategic influence with day-to-day design work.
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="d-flex mb-5 about">
+                                <span class="material-icons-outlined materialIcon m-auto text-primary">code</span>
+                            </div>
+                            <h5>Development</h5>
+                            <p class="text-muted mb-0">
+                                I develop responsive, scalable, and fast applications using the best standards and
+                                coding practices.
                             </p>
-                            <a href="#" class="btn btn-primary mt-auto">Read more</a>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="d-flex mb-5 about">
+                                <span class="material-icons-outlined materialIcon m-auto text-primary">settings</span>
+                            </div>
+                            <h5>Launch & Maintenance</h5>
+                            <p class="text-muted mb-0">
+                                Once the application is ready, I will help you launch it and teach you how to update and
+                                maintain it.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!--FAQ's-->
+            </section>
+            <hr>
 
-        <div id="faq" class="container-fluid">
-            <div class="container p-4">
-                <p class="mt-3 text-center text-light">05 - FAQS</p>
-                <div class="faq-heading mt-3">
-                    <h2 class="d-block text-center text-light">We got you an answer
-                    </h2>
-                    <p class="text-center text-light">Everything you might want to know before we work together -
-                        answered clearly and simply</p>
+            <!-- End About -->
+
+            <!-- Projects -->
+            <section id="projects" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Projects</h2>
+                        <p class="lead text-muted mb-5">
+                            View some of my latest projects
+                        </p>
+                    </div>
                 </div>
 
-                <div class="faq-body mt-5 text-light">
-                    <div class="container d-flex flex-column faq-container ">
-                        <!--Question 1-->
-                        <div>
-                            <div class="d-flex flex-row justify-content-between align-items-center">
-                                <h4>What kind of projects do you take on?</h4>
-                                <button class="btn toggle-btn toggleBtn" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="#collapse1">
-                                    <img src="./media/icons/plus.png" class="plus-icon" alt=""
-                                        style="width: 20px; height: 20px;">
-                                    <img src="./media/icons/close.png" class="cross-icon" alt=""
-                                        style="width: 20px; height: 20px;">
-                                </button>
-                            </div>
-                            <div class="collapse" id="collapse1">
-                                <div class="toggle-body">
-                                    I focus on product design, UX strategy, and interface design for digital products -
-                                    mainly
-                                    web and mobile. I work with startups, scal-ups, and established brands who value
-                                    thoughtful,
-                                    user-centered design.
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card project-card h-100 shadow-lg border-0 bg-light">
+                                <img src="./media/Images/hero.avif" alt="Project 1">
+                                <div class="card-body p-4">
+                                    <div class="card-title mb-3">Cryptocurrency Dashboard</div>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">Django</div>
+                                        <div class="badge bg-primary rounded-pill">Material UI</div>
+                                        <div class="badge bg-primary rounded-pill">React</div>
+                                    </div>
+                                    <p class="card-text">
+                                        A cryptocurrency dashboard app built using React 17, Material UI 5 and Chart.js
+                                        3.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-primary bg-transparent mb-3 text-uppercase text-primary"
+                                        href="https://github.com/BobsProgramingAcademy/cryptocurrency-dashboard"
+                                        target="_blank">
+
+                                        <span class="material-icons-outlined materialIcon me-1">code</span>
+                                        Source Code
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <!--Question 2-->
-                        <div>
-                            <div class="d-flex flex-row justify-content-between align-items-center ">
-                                <h4>Do you offer freelance or consulting services?</h4>
-                                <button class="btn toggle-btn toggleBtn" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    <img src="./media/icons/plus.png" class="plus-icon"
-                                        style="width: 20px; height: 20px;" alt="plus">
-                                    <img src="./media/icons/close.png" class="cross-icon"
-                                        style="width: 20px; height: 20px;" alt="cross">
-                                </button>
-                            </div>
-                            <div class="collapse" id="collapse2">
-                                <div class="toggle-body">
-                                    Yes, I offer both freelance and consulting services depending on the project
-                                    scope and timeline. Whether you need end-to-end product design or a strategic UX
-                                    audit, I'm happy to collaborate.
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card project-card h-100 shadow-lg border-0 bg-light">
+                                <img src="./media/Images/laptop.jpg" alt="Project 1">
+                                <div class="card-body p-4">
+                                    <div class="card-title mb-3">Portfolio Website</div>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">Django</div>
+                                        <div class="badge bg-primary rounded-pill">Material UI</div>
+                                        <div class="badge bg-primary rounded-pill">React</div>
+                                    </div>
+                                    <p class="card-text">
+                                        A portfolio webiste using Django 3, Next.js 12 and Material UI 5 that uses a
+                                        PostgreSQL, database to store data.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-primary bg-transparent mb-3 text-uppercase text-primary"
+                                        href="https://github.com/BobsProgramingAcademy/portfolio-webiste"
+                                        target="_blank">
+
+                                        <span class="material-icons-outlined materialIcon me-1">code</span>
+                                        Source Code
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-
-                        <!--Question 3-->
-                        <div>
-                            <div class="d-flex flex-row justify-content-between align-items-center ">
-                                <h4>Can we work remotely?</h4>
-                                <button class="btn toggle-btn toggleBtn" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    <img src="./media/icons/plus.png" class="plus-icon"
-                                        style="width: 20px; height: 20px;" alt="plus">
-                                    <img src="./media/icons/close.png" class="cross-icon"
-                                        style="width: 20px; height: 20px;" alt="cross">
-                                </button>
-                            </div>
-                            <div class="collapse" id="collapse3">
-                                <div class="toggle-body">
-                                    Absolutely. I regularly collaborate with clients from all over the world.
-                                    Communication is seamless through tools like Zoom, Slack, and Notion.
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card project-card h-100 shadow-lg border-0 bg-light">
+                                <img src="./media/Images/laptop2.jpg" alt="Project 1">
+                                <div class="card-body p-4">
+                                    <div class="card-title mb-3">Image Classification</div>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">Django</div>
+                                        <div class="badge bg-primary rounded-pill">Material UI</div>
+                                        <div class="badge bg-primary rounded-pill">React</div>
+                                    </div>
+                                    <p class="card-text">
+                                        An image classification app built using Tensorflow 2, Django 3 and Materiall UI
+                                        5.
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-primary bg-transparent mb-3 text-uppercase text-primary"
+                                        href="https://github.com/BobsProgramingAcademy/image-classification-mnist"
+                                        target="_blank">
 
-
-                        <!--Question 4-->
-
-                        <div>
-                            <div class="d-flex flex-row justify-content-between align-items-center">
-                                <h4>What’s your typical design process?</h4>
-                                <button class="btn toggle-btn toggleBtn" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    <img src="./media/icons/plus.png" class="plus-icon"
-                                        style="width: 20px; height: 20px;" alt="plus">
-                                    <img src="./media/icons/close.png" class="cross-icon"
-                                        style="width: 20px; height: 20px;" alt="cross">
-                                </button>
-                            </div>
-                            <div class="collapse" id="collapse4">
-                                <div class="toggle-body">
-                                    I typically follow a user-centered design process that includes discovery,
-                                    wireframing, prototyping, user testing, and final UI design. Each phase is
-                                    adapted to suit your project's needs.
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!--Question 5-->
-                        <div>
-                            <div class="d-flex flex-row justify-content-between align-items-center ">
-                                <h4>Do you also handle development?</h4>
-                                <button class="btn toggle-btn toggleBtn" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    <img src="./media/icons/plus.png" class="plus-icon"
-                                        style="width: 20px; height: 20px;" alt="plus">
-                                    <img src="./media/icons/close.png" class="cross-icon"
-                                        style="width: 20px; height: 20px;" alt="cross">
-                                </button>
-                            </div>
-                            <div class="collapse" id="collapse5">
-                                <div class="toggle-body">
-                                    While my core expertise lies in design, I collaborate with skilled developers or
-                                    your in-house team to ensure smooth handoff and implementation. I can also
-                                    support with front-end guidance and design QA.
+                                        <span class="material-icons-outlined materialIcon me-1">code</span>
+                                        Source Code
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+            </section>
+            <hr>
 
-                <div class="container p-4" id="newsletter">
-                    <h1 class="text-light text-center mt-5">Subscribe to our newsletter</h1>
-                    <h1 class="text-secondary text-center">Get update and insights from Anders</h1>
-                    <form class="d-flex flex-column align-items-center justify-content-center">
-                        <div class="mb-3" style="margin-top: 60px;">
-                            <label for="inputEmail" class="form-label text-light">Email address</label>
-                            <input type="email" class="form-control input-Email" id="inputEmail"
-                                placeholder="example@domain.com" style="border-radius: 20px;">
-                            <div id="emailHelp" class="form-text text-light">We'll never share your email with anyone
-                                else.</div>
+
+            <!-- End Projects -->
+
+
+            <!-- Testimonials -->
+            <section id="testimonials" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Testimonials</h2>
+                        <p class="lead text-muted mb-5">
+                            Check what clients have said about my work
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="text-center fs-4 fst-italic mb-4 px-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nulla.
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center testimonials">
+                                <img class="rounded-circle me-3" src="./media/Images/img-1.jpg" alt="user1">
+                                <div class="fw-bold">
+                                    Any Jones
+                                    <span class="text-primary mx-1">
+                                        CEO, Company 1
+                                    </span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input checkInput" type="checkbox" value="" id="checkDefault">
-                            <label class="form-check-label text-light" for="checkDefault">
-                                Send me updates about newest blogs, prices, and all the newest information
-                            </label>
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="text-center fs-4 fst-italic mb-4 px-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nulla.
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center testimonials">
+                                <img class="rounded-circle me-3" src="./media/Images/img-1.jpg" alt="user1">
+                                <div class="fw-bold">
+                                    James Smith
+                                    <span class="text-primary mx-1">
+                                        CEO, Company 2
+                                    </span>
+                                </div>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn  mt-5 px-5 py-3 rounded-pill  fw-bold subscribe-btn"
-                            style="">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-    </main>
-    <footer id="footer" class="container-fluid p-5">
-        <div class="container">
-            <div class="row d-flex flex-row">
-                <div class="col-6">
-                    <div class="d-flex flex-row gap-3">
-                        <div class="brand-icon">
-                            <img src="./media/icons/letter-a.png" alt="" style="width: 30px; height: 30px;">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="text-center fs-4 fst-italic mb-4 px-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nulla.
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center testimonials">
+                                <img class="rounded-circle me-3" src="./media/Images/img-1.jpg" alt="user1">
+                                <div class="fw-bold">
+                                    Mary Richards
+                                    <span class="text-primary mx-1">
+                                        CEO, Company 3
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="text-light">Anders Antosen</h4>
-                    </div>
-                    <p class="text-light">Thanks for stopping by. Wheter you're here to explore my work or start as a
-                        new
-                        project, I'm always open to great ideas and conversations.</p>
-                </div>
-                <div class="col-2">
-                    <div class="explore text-light">
-                        <p class="fw-bold fs-5">Explore</p>
-                        <p>Work</p>
-                        <p>Experience</p>
-                        <p>Blogs</p>
-                        <p>FAQs</p>
-                        <p>Proposal</p>
-                        <p>Case Studies</p>
                     </div>
                 </div>
-                <div class="col-2">
-                    <div class="explore text-light">
-                        <p class="fw-bold fs-5">Connect</p>
-                        <p>Contact</p>
-                        <p>Instagram</p>
-                        <p>Linkedin</p>
-                        <p>Behance</p>
-                        <p>Dribble</p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="explore text-light">
-                        <p class="fw-bold fs-5">Others</p>
-                        <p>Privacy</p>
-                        <p>Guides</p>
-                        <p>Terms of Conditions</p>
-                    </div>
-                </div>
-            </div>
+            </section>
+            <hr>
 
-            <div class="d-flex flex-row justify-content-between" style="margin-top: 250px;">
-                <p class="text-light"> <i class="fa-solid fa-copyright"></i>2025 Anders Antonsen. All rights reserved.
-                </p>
-                <p class="text-light">Designed and developed by Anders Antosen</p>
-            </div>
+            <!-- End Testimonials -->
+
+            <!-- Contact -->
+            <section id="contact" class="text-center py-5 bg-white">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Contact</h2>
+                        <p class="lead text-muted mb-5">
+                            You can reach out to me through the following platforms.
+                        </p>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-icon mb-3 text-primary">
+                                <span class="material-icons-outlined fs-1">email</span>
+                            </div>
+                            <h5 class="fw-bold">Email</h5>
+                            <p class="text-muted">saniya.dev@example.com</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-icon mb-3 text-primary">
+                                <span class="material-icons-outlined fs-1">phone</span>
+                            </div>
+                            <h5 class="fw-bold">Phone</h5>
+                            <p class="text-muted">+91 98765 43210</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-icon mb-3 text-primary">
+                                <span class="material-icons-outlined fs-1">location_on</span>
+                            </div>
+                            <h5 class="fw-bold">Location</h5>
+                            <p class="text-muted">Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 justify-content-center">
+                        <div class="col-md-6">
+                            <h5 class="fw-bold">Follow Me</h5>
+                            <div class="d-flex justify-content-center gap-4 mt-3">
+                                <a href="https://www.linkedin.com/in/profile"
+                                    class="text-decoration-none text-primary fs-4">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/username" class="text-decoration-none text-dark fs-4">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="saniya.dev@example.com" class="text-decoration-none text-danger fs-4">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contact -->
+        </main>
+    </div>
+    <hr>
+
+    <footer class="text-center py-4">
+        <!-- Footer content -->
+        <div class="container px-5 mb-2">
+            Copyright &copy; 2022 Saniya's Programming Academy.
         </div>
     </footer>
 </body>

@@ -1,4 +1,4 @@
-/* theme */
+theme
 
 :root {
     /* --backgroundHex: #1A1A1D;
@@ -10,14 +10,26 @@
     --secondaryRGB : 106, 30, 85;
     --darkRGB : 166, 77, 121; */
 
-    --backgroundHex: #1E0342;
+
+    --backgroundHex: #222831;
+    --primaryHex: #393E46; 
+    --secondaryHex: #948979; 
+    --darkHex:#DFD0B8; 
+    --backgroundRGB: rgb(34, 40, 49); 
+    --primaryRGB: rgb(57, 62, 70); 
+    --secondaryRGB:rgb(148, 137, 121); 
+    --darkRGB: rgb(223, 208, 184); 
+
+
+
+    /* --backgroundHex: #1E0342;
     --primaryHex: #0E46A3;
     --secondaryHex: #9AC8CD;
     --darkHex: #E1F7F5;
     --backgroundRGB: rgb(30, 3, 66);
     --primaryRGB: rgb(14, 70, 163);
     --secondaryRGB: rgb(154, 200, 205);
-    --darkRGB: rgb(225, 247, 245);
+    --darkRGB: rgb(225, 247, 245); */
 }
 
 

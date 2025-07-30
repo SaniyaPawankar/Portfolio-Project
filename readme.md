@@ -7,7 +7,7 @@ technologies used as:
 
 3) bootstrap 5
 
-vendors : fontawesome 6 and above.
+vendors : fontawesome 6 and Material Icons/Goggle Icons
 
 insp : dribble
 https://dribbble.com/shots/24759521-COZYDIADORA-Personal-Portfolio-Website
